@@ -1,0 +1,7 @@
+:connect .\sqlexpress -U sa -P Zet@soluzion1
+USE AHR_IRRILAND
+GO
+UPDATE IRRILCON_TRAD SET COPRCOST = 'S'
+WHERE COPRCOST = 'N' AND CONUMERO LIKE 'F%'
+GO
+:Quit
