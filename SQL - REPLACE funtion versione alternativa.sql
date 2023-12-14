@@ -1,0 +1,8 @@
+-- CHAR(39) è il carattere '
+select CG16_RAGSOANAG, REPLACE(CG16_RAGSOANAG,CHAR(39),'')  from CG16_ANAGGEN
+where CG16_RAGSOANAG like '%'+CHAR(39)+'%'
+
+--Oppure
+...
+REPLACE(REPLACE(RTRIM(MG87_ARTDESC.MG87_DESCART),CHAR (10),''),CHAR(13),'')
+...
